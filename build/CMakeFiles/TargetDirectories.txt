@@ -1,0 +1,3 @@
+/home/gungui/sdl/SDL2-Demo/build/CMakeFiles/rebuild_cache.dir
+/home/gungui/sdl/SDL2-Demo/build/CMakeFiles/MyGame.dir
+/home/gungui/sdl/SDL2-Demo/build/CMakeFiles/edit_cache.dir

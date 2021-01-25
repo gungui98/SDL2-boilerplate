@@ -1,0 +1,55 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/gungui/sdl/SDL2-Demo/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_95f12/fast"
+/usr/bin/make -f CMakeFiles/cmTC_95f12.dir/build.make CMakeFiles/cmTC_95f12.dir/build
+make[1]: Entering directory '/home/gungui/sdl/SDL2-Demo/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_95f12.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTC_95f12.dir/CheckSymbolExists.cxx.o -c /home/gungui/sdl/SDL2-Demo/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+Linking CXX executable cmTC_95f12
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_95f12.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_95f12.dir/CheckSymbolExists.cxx.o  -o cmTC_95f12 
+CMakeFiles/cmTC_95f12.dir/CheckSymbolExists.cxx.o: In function `main':
+CheckSymbolExists.cxx:(.text+0x1b): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_95f12.dir/build.make:97: recipe for target 'cmTC_95f12' failed
+make[1]: *** [cmTC_95f12] Error 1
+make[1]: Leaving directory '/home/gungui/sdl/SDL2-Demo/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_95f12/fast' failed
+make: *** [cmTC_95f12/fast] Error 2
+
+File /home/gungui/sdl/SDL2-Demo/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/gungui/sdl/SDL2-Demo/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_41cce/fast"
+/usr/bin/make -f CMakeFiles/cmTC_41cce.dir/build.make CMakeFiles/cmTC_41cce.dir/build
+make[1]: Entering directory '/home/gungui/sdl/SDL2-Demo/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_41cce.dir/CheckFunctionExists.cxx.o
+/usr/bin/c++    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_41cce.dir/CheckFunctionExists.cxx.o -c /home/gungui/sdl/SDL2-Demo/build/CMakeFiles/CheckLibraryExists/CheckFunctionExists.cxx
+Linking CXX executable cmTC_41cce
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_41cce.dir/link.txt --verbose=1
+/usr/bin/c++   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_41cce.dir/CheckFunctionExists.cxx.o  -o cmTC_41cce -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_41cce.dir/build.make:97: recipe for target 'cmTC_41cce' failed
+make[1]: *** [cmTC_41cce] Error 1
+make[1]: Leaving directory '/home/gungui/sdl/SDL2-Demo/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_41cce/fast' failed
+make: *** [cmTC_41cce/fast] Error 2
+
+
