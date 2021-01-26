@@ -38,7 +38,7 @@ Assuming CodeBlock 20.03 is installed (with MinGW64)
 - From CB Select ```file->new->project...->SDL2.0```
 
 - Enter project name and choose the path to SDL2 library eg. ```C:\Users\ADMIN\Downloads\SDL2-devel-2.0.14-mingw\SDL2-2.0.14\x86_64-w64-mingw32\```
-- Choose GNU/GPL compiler (this is selected by default, if not, please reinstall CB with MinGW64)
+- Choose GNU/GCC compiler (this is selected by default, if not, please reinstall CB with MinGW64)
 
 ### Step 3: Add SDL-2 linker to project  
 - From project name (with colored windows icon), right click to select ```build options```
