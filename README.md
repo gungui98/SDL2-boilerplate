@@ -10,7 +10,7 @@ To setup the nesscessary packages:
 
 sudo apt-get update &&\
 sudo apt-get install -y libsdl2-image-dev\ 
-libsdl2-dev --fix-missing
+libsdl2-dev cmake build-essential --fix-missing
 
 ```
 After install the developer versions of SDL2 and SDL2_image:
